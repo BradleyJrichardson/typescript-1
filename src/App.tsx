@@ -1,9 +1,13 @@
 import React from "react";
-import { TextField } from "./TextField";
+import { TextField, TextFieldWithPropInterface } from "./TextField";
 const App: React.FC = () => {
   return (
     <div>
       <TextField text="hello" />
+      <TextFieldWithPropInterface
+        text="hello"
+        person={{ firstName: "", lastName: "" }}
+      />
     </div>
   );
 };
